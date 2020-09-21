@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node server"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,10 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4",
     "xml-loader": "^1.2.1"
-  }
+  },
+  "sideEffects": [
+    "./src/some-side-effectful-file.js",
+    "./math.js",
+    "*.css"
+  ]
 }
