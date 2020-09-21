@@ -1,0 +1,11 @@
+{
+    "name": "your-project",
+    "scripts": {
+        "start": "webpack"
+    },
+    "sideEffects": [
+        "./src/some-side-effectful-file.js",
+        "./math.js",
+        "*.css"
+    ]
+}
